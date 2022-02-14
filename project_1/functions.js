@@ -76,7 +76,7 @@ const sortBy =
       desc: (a, b) => b[attr] - a[attr],
       asc: (a, b) => a[attr] - b[attr],
     };
-    return arr.sort(options[order]);
+    return [...arr].sort(options[order]);
   };
 
 module.exports = {
